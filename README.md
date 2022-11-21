@@ -1,5 +1,5 @@
 # raspiblitz-scripts
-Additional custom scripts to extend your RaspiBlitz
+Additional custom scripts to extend your [RaspiBlitz](https://github.com/rootzoll/raspiblitz/)
 
 1. Checkout the scripts to your ssd:
 - `cd /mnt/hdd`
