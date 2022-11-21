@@ -6,6 +6,7 @@ Additional custom scripts to extend your [RaspiBlitz](https://github.com/rootzol
 - `sudo mkdir raspiblitz-scripts`
 - `sudo chown -R admin:admin raspiblitz-scripts/`
 - `git clone https://github.com/ChuckNorrison/raspiblitz-scripts`
+- `sudo chmod +x raspiblitz-scripts/*.sh`
 
 2. Add desired install script to `/mnt/hdd/app-data/custom-installs.sh` (see example)
 
