@@ -7,7 +7,7 @@
 # note: use absolute paths if you point to specific files
 
 echo "Custom install OpenVPN Client"
-sudo bash /mnt/hdd/custom-installs/install_openvpn.sh
+sudo bash /mnt/hdd/raspiblitz-scripts/custom-installs/install_openvpn.sh
 
 echo "Custom install network check"
-sudo bash /mnt/hdd/custom-installs/install_check_network.sh
+sudo bash /mnt/hdd/raspiblitz-scripts/custom-installs/install_check_network.sh

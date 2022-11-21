@@ -5,7 +5,7 @@
 ##############################
 
 pingtest=10.8.0.1
-ovpnfile=/mnt/hdd/custom-installs/client.ovpn
+ovpnfile=/mnt/hdd/raspiblitz-scripts/custom-installs/client.ovpn
 
 if [ $# -eq 0 ] || [ "$1" != "--silent" ]; then
   # ask user
@@ -55,7 +55,7 @@ if [ $? -eq 0 ]; then
   # autostart service
   sudo systemctl enable openvpn@client
   # configure firewall
-  sudo bash /mnt/hdd/custom-installs/firewall.sh
+  sudo bash /mnt/hdd/raspiblitz-scripts/custom-installs/firewall.sh
 else
   echo "`date`: Connectivity check failed"
   exit
