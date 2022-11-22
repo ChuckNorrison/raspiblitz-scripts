@@ -1,5 +1,7 @@
 #!/bin/bash
 
+publicip=123.45.67.8
+
 # Reset firewall rules
 sudo ufw --force reset
 
@@ -16,7 +18,7 @@ sudo ufw allow from 192.168.0.0/16 comment "ALL IN LAN2"
 sudo ufw allow out on eth0 to 172.31.0.0/16 comment "ALL OUT LAN1"
 sudo ufw allow out on eth0 to 192.168.0.0/16 comment "ALL OUT LAN2"
 # need to check own public IP (UPDATE THIS EXTERNAL IP HERE)
-sudo ufw allow out on eth0 to 123.45.67.8/32 comment "ALL OUT VPS"
+sudo ufw allow out on eth0 to $publicip/32 comment "ALL OUT VPS"
 
 # allow OpenVPN Client connection
 sudo ufw allow out 1194/udp comment "OPENVPN"
