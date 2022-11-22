@@ -27,7 +27,6 @@ Start install script manually or reflash sd card
 
 This script can help solve connectivity issues with DHCP or VPN which can happen sometimes, especially on reconnect LAN.
 Tweak your gatewayip to ping check into `check_network.sh`
-Do NOT execute install script multiple times, it will simply add a line to your crontab.
 
 Check with `sudo crontab -e`
 
